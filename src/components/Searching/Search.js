@@ -22,7 +22,6 @@ class Search extends Component {
                               &image_type=photo&safesearch=true`
                               )
                               .then(res => {
-                                        console.log(res.data);
                                         dispatch({
                                                   type: 'SEARCH_IMAGE',
                                                   payload: res.data.hits
